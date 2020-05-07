@@ -1,5 +1,7 @@
 ---
 vote:
-  PIZ: 2
+  PIZ: 3
   LAM: 2
-  HAM: 1
+  HAM: 3
+  SUS: 2
+  ! '': 4

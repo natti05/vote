@@ -1,18 +1,22 @@
-<body class='container'>
-  <h1><%= @greeting %></h1>
-  <p>What will we have for dinner?</p>
-  <form action='cast' method='post'>
-    <ul class='unstyled'>
-      <% Options.each do |id, text| %>
-        <li>
-          <label class='radio'>
-            <input type='radio' name='vote' value='<%= id %>' id='vote_<%= id %>' />
-            <%= text %>
-          </label>
-        </li>
-      <% end %>
-    </ul>
-    <button type='submit' class='btn btn-primary'>Vote!</button>
-  </form>
-</body>
+<div class='container'>
+  <div class="row">
+    <div class="column">
+    <h1><%= @greeting %></h1>
+    <p>What will we have for dinner?</p>
+    <form action='cast' method='post'>
+      <ul class='unstyled'>
+        <% Options.each do |id, text| %>
+          <li>
+            <label class='radio'>
+              <input type='radio' name='vote' value='<%= id %>' id='vote_<%= id %>' />
+              <%= text %>
+            </label>
+          </li>
+        <% end %>
+      </ul>
+      <button type='submit' class='btn'>Vote!</button>
+    </form>
+    </div>
+  </div>
+</div>
 
